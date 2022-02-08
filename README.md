@@ -9,11 +9,24 @@
 - JavaScript
 - Webpack
 
+## Video
+
+In the following [link](Coming Soon)
+
+
+## Live Server
+
+In the following link, you can view (Coming Soon)).
+
+## Screenshot
+
+In the following link, you can view (Coming Soon)).
+
 ## Usage
 
 start by cloning this repository by running:
 
-git clone ![url](git@github.com:RaviTejaM9602/Leaderboard.git)
+git clone [url](git@github.com:RaviTejaM9602/Leaderboard.git)
 
 cd into the folder
 
