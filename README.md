@@ -13,7 +13,7 @@
 
 start by cloning this repository by running:
 
-git clone [url](git@github.com:RaviTejaM9602/Leaderboard.git)
+git clone ![url](git@github.com:RaviTejaM9602/Leaderboard.git)
 
 cd into the folder
 
