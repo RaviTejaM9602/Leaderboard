@@ -1,27 +1,30 @@
 {
-  "name": "Hello-Microverse",
+  "name": "webpack",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RaviTejaM9602/Hello-Microverse.git"
+    "url": "git+https://github.com/RaviTejaM9602/webpack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RaviTejaM9602/Hello-Microverse/issues"
+    "url": "https://github.com/RaviTejaM9602/webpack/issues"
   },
-  "homepage": "https://github.com/RaviTejaM9602/Hello-Microverse#readme",
+  "homepage": "https://github.com/RaviTejaM9602/Leaderboard/blob/dev/README.md",
   "devDependencies": {
-    "hint": "^6.1.9",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
   }
 }
