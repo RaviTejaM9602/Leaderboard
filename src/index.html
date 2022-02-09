@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wbpack Exercise</title>
-</head>
-<body>
-
-  <h1 id="header">LeaderBoard</h1>
+  </head>
+  <body>
+    <h1 id="header">LeaderBoard</h1>
 
     <div id="main-content">
-        <div id="score-list">
-           <div id="score-head">
-            <h2>Recent scores</h2>
-            <button type="button">Refresh</button>
-           </div>            
-            <table id="items">
-                <tr>
-                  <td>Name: 100</td>
-                </tr>
-                <tr>
-                  <td>Name: 20</td>
-                </tr>
-                <tr>
-                  <td>Name: 50</td>
-                </tr>
-                <tr>
-                  <td>Name: 78</td>
-                </tr>
-                <tr>
-                  <td>Name: 125</td>
-                </tr>
-                <tr>
-                  <td>Name: 77</td>
-                </tr>
-                <tr>
-                  <td>Name: 42</td>
-                </tr>
-              </table>
+      <div id="score-list">
+        <div id="score-head">
+          <h2>Recent scores</h2>
+          <button type="button">Refresh</button>
         </div>
-        <div id="add-item">
-            <h2>Add Your Score</h2>
-            <input type="text" id="fname" name="fname" placeholder="Your name" required/>
-            <input type="number" id="score" name="score" placeholder="Your score" required />
+        <table id="items">
+          <tr>
+            <td>Name: 100</td>
+          </tr>
+          <tr>
+            <td>Name: 20</td>
+          </tr>
+          <tr>
+            <td>Name: 50</td>
+          </tr>
+          <tr>
+            <td>Name: 78</td>
+          </tr>
+          <tr>
+            <td>Name: 125</td>
+          </tr>
+          <tr>
+            <td>Name: 77</td>
+          </tr>
+          <tr>
+            <td>Name: 42</td>
+          </tr>
+        </table>
+      </div>
+      <div id="add-item">
+        <h2>Add Your Score</h2>
+        <form>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="number"
+            id="score"
+            name="score"
+            placeholder="Your score"
+            required
+          />
           <button type="submit">Submit</button>
         </form>
-        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
