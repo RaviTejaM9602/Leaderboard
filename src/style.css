@@ -4,12 +4,36 @@ body {
 }
 
 #header{
-  align-items: center;
+  text-align: center;
 }
 
 #main-content {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 }
 
+#score-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+#score-head button {
+  padding: 0 3px 0 3px;
+  width: 100px;
+  margin: 15px;
+}
+
+#items {
+  align-self: center;
+  margin: auto;
+}
+
+input {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#add-item button {
+  float: right;
+}
