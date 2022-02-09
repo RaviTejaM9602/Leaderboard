@@ -34,8 +34,7 @@ const refreshLeaderboard = async () => {
   score.result.forEach((player) => {
     if (player.length === 0) {
       leaderboard.style.border = 'none';
-      }
-    else {
+    } else {
       leaderboard.style.border = '2px solid rgb(36, 1, 1)';
       leaderboard.innerHTML += `<li>
       ${player.user}: ${player.score}</td>
