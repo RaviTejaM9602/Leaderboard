@@ -19,7 +19,7 @@ const REFRESH = document.querySelector('#refresh');
         body: JSON.stringify({
           user: NAME.value,
           score: SCORE.value,
-       }),
+        }),
       },
     );
   });
@@ -32,15 +32,15 @@ const refreshLeaderboard = async () => {
   const scoreText = await response.text();
   const score = JSON.parse(scoreText);
   score.result.forEach((player) => {
-  if (player.length === 0){
+    if (player.length === 0) {
     leaderboard.style.border = 'none';
   }
-  else{
+  else {
     leaderboard.style.border = '2px solid rgb(36, 1, 1)';
     leaderboard.innerHTML += `<li>
-  ${player.user}: ${player.score}</td>
+    ${player.user}: ${player.score}</td>
     </li>`;
-   }
+  }
 });
 };
 
