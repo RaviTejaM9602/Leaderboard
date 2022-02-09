@@ -39,7 +39,6 @@ const refreshLeaderboard = async () => {
 
 
 REFRESH.addEventListener('click', () => {
-  console.log('hello');
   leaderboard.innerHTML = '';
   refreshLeaderboard();
 });
