@@ -1,5 +1,5 @@
 import './style.css';
-let leaderboard = document.querySelector('.items');
+let leaderboard = document.querySelector('#items');
 const FORM = document.querySelector('form');
 const NAME = FORM.querySelector('input');
 const SCORE = FORM.querySelector('input[type="number"]');
@@ -26,7 +26,7 @@ const REFRESH = document.querySelector('#refresh');
 
 const refreshLeaderboard = async () => {
   let response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/hu7RDeMDKj2AivBi1yhx/scores'
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/oHFx2AoOEAVDqu2U4dC1/scores'
   );
   let scoreText = await response.text();
   let score = JSON.parse(scoreText);
@@ -39,6 +39,7 @@ const refreshLeaderboard = async () => {
 
 
 REFRESH.addEventListener('click', () => {
+  console.log('hello');
   leaderboard.innerHTML = '';
   refreshLeaderboard();
 });
