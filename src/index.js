@@ -33,18 +33,18 @@ const refreshLeaderboard = async () => {
   const score = JSON.parse(scoreText);
   score.result.forEach((player) => {
     if (player.length === 0) {
-    leaderboard.style.border = 'none';
-  }
-  else {
-    leaderboard.style.border = '2px solid rgb(36, 1, 1)';
-    leaderboard.innerHTML += `<li>
-    ${player.user}: ${player.score}</td>
-    </li>`;
-  }
-});
+      leaderboard.style.border = 'none';
+    }
+    else {
+      leaderboard.style.border = '2px solid rgb(36, 1, 1)';
+      leaderboard.innerHTML += `<li>
+      ${player.user}: ${player.score}</td>
+      </li>`;
+    }
+  });
 };
 
-REFRESH.addEventListener('click', () => {
+REFRESH.adudEventListener('click', () => {
   leaderboard.innerHTML = '';
   refreshLeaderboard();
 });
