@@ -27,6 +27,15 @@ body {
 #items {
   align-self: center;
   margin: auto;
+  padding: 0;
+}
+
+#items li {
+  list-style: none;
+}
+
+#items li:nth-child(odd) {
+  background-color: rgb(173, 168, 160);
 }
 
 input {
