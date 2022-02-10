@@ -1,7 +1,6 @@
 import './style.css';
-import  refreshLeaderboard  from './modules/refresh.js';
+import  { leaderboard, refreshLeaderboard }  from './modules/refresh.js';
 
-const leaderboard = document.querySelector('#items');
 const FORM = document.querySelector('form');
 const NAME = FORM.querySelector('input');
 const SCORE = FORM.querySelector('input[type="number"]');
@@ -29,12 +28,10 @@ const refreshInput = () => {
       },
       refreshInput(),
     );
-});
+  });
 })();
 
 REFRESH.addEventListener('click', () => {
   leaderboard.innerHTML = '';
   refreshLeaderboard();
 });
-  
-export default leaderboard;

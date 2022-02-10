@@ -1,6 +1,6 @@
-import  leaderboard  from '../index.js';
+export const leaderboard = document.querySelector('#items');
 
-const refreshLeaderboard = async () => {
+export const refreshLeaderboard = async () => {
   const response = await fetch(
     'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BxXNm40rTdIjhpN9YGnO/scores',
     );
@@ -17,5 +17,3 @@ const refreshLeaderboard = async () => {
     }
   });
 };
-
-export default refreshLeaderboard;
