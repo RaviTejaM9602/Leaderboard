@@ -1,5 +1,5 @@
 import './style.css';
-import { refreshLeaderboard } from './modules/refresh.js';
+import  refreshLeaderboard  from './modules/refresh.js';
 
 const leaderboard = document.querySelector('#items');
 const FORM = document.querySelector('form');
@@ -28,13 +28,13 @@ const refreshInput = () => {
         }),
       },
       refreshInput(),
-      );
-    });
-  })();
+    );
+});
+})();
+
+REFRESH.addEventListener('click', () => {
+  leaderboard.innerHTML = '';
+  refreshLeaderboard();
+});
   
-  REFRESH.addEventListener('click', () => {
-    leaderboard.innerHTML = '';
-    refreshLeaderboard();
-  });
-  
-  export default leaderboard;
+export default leaderboard;
