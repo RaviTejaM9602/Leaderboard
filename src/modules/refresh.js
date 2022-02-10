@@ -6,7 +6,7 @@ export const refreshLeaderboard = async () => {
   );
   const scoreText = await response.text();
   const score = JSON.parse(scoreText);
-  const updateScore = score.result.sort((a, b) => a - b);
+  const updateScore = score.result.sort((a, b) => b.score - a.score);
   updateScore.forEach((player) => {
     if (player.length === 0) {
       leaderboard.style.border = 'none';
