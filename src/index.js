@@ -1,5 +1,5 @@
 import './style.css';
-import  { leaderboard, refreshLeaderboard }  from './modules/refresh.js';
+import { leaderboard, refreshLeaderboard } from './modules/refresh.js';
 
 const FORM = document.querySelector('form');
 const NAME = FORM.querySelector('input');

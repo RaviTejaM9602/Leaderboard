@@ -3,7 +3,7 @@ export const leaderboard = document.querySelector('#items');
 export const refreshLeaderboard = async () => {
   const response = await fetch(
     'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BxXNm40rTdIjhpN9YGnO/scores',
-    );
+  );
   const scoreText = await response.text();
   const score = JSON.parse(scoreText);
   score.result.forEach((player) => {
