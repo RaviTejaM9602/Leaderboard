@@ -15,7 +15,7 @@ const refreshInput = () => {
   FORM.addEventListener('submit', (e) => {
     e.preventDefault();
     fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BxXNm40rTdIjhpN9YGnO/scores',
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jnQ9SaNBcxmauGizi1rh/scores',
       {
         method: 'POST',
         headers: {
