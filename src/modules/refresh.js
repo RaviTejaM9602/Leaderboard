@@ -2,11 +2,12 @@ export const leaderboard = document.querySelector('#items');
 
 export const refreshLeaderboard = async () => {
   const response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BxXNm40rTdIjhpN9YGnO/scores',
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jnQ9SaNBcxmauGizi1rh/scores',
   );
   const scoreText = await response.text();
   const score = JSON.parse(scoreText);
-  score.result.forEach((player) => {
+  const updateScore = score.result.sort((previousPlayer, nextPlayer) => nextPlayer.score - previousPlayer.score);
+  updateScore.forEach((player) => {
     if (player.length === 0) {
       leaderboard.style.border = 'none';
     } else {

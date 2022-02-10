@@ -1,6 +1,5 @@
 # Leaderboard-project
-
-![screenshot](Coming Soon)
+This web application is a type of a scoreboard showing the names and current scores of the leading competitors in any field which is using API's to get and set data
 
 ## Built with
 

@@ -1,6 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 body {
+  font-family: Lato, sans-serif;
+  background-color: var(--dark-whiten);
   padding: 0;
   margin: 0;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
 }
 
 #header {
@@ -10,7 +28,15 @@ body {
 #main-content {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 5px;
+  padding: 2px;
+}
+
+#score-list {
+  margin: 5px;
+  padding: 20px;
+  border-right: 2px solid black;
 }
 
 #score-head {
@@ -20,8 +46,7 @@ body {
 
 #score-head button {
   padding: 0 3px 0 3px;
-  width: 100px;
-  margin: 15px;
+  margin: 20px;
 }
 
 #items {
