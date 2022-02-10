@@ -1,4 +1,4 @@
-import leaderboard from '../index.js';
+import { leaderboard } from '../index.js';
 
 const refreshLeaderboard = async () => {
   const response = await fetch(
