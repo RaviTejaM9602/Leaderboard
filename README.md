@@ -20,7 +20,11 @@ In the following link, you can view (Coming Soon)).
 
 ## Screenshot
 
-In the following link, you can view (Coming Soon)).
+![LeaderBoard_App](./images/LeaderBoard.png)
+![LeaderBoard_App](./images/LeaderBoard2.png)
+
+
+
 
 ## Usage
 

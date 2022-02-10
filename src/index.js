@@ -1,16 +1,21 @@
 import './style.css';
+import { leaderboard, refreshLeaderboard } from './modules/refresh.js';
 
-const leaderboard = document.querySelector('#items');
 const FORM = document.querySelector('form');
 const NAME = FORM.querySelector('input');
 const SCORE = FORM.querySelector('input[type="number"]');
 const REFRESH = document.querySelector('#refresh');
 
+const refreshInput = () => {
+  NAME.value = '';
+  SCORE.value = '';
+};
+
 (() => {
   FORM.addEventListener('submit', (e) => {
     e.preventDefault();
     fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/oHFx2AoOEAVDqu2U4dC1/scores',
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BxXNm40rTdIjhpN9YGnO/scores',
       {
         method: 'POST',
         headers: {
@@ -21,29 +26,12 @@ const REFRESH = document.querySelector('#refresh');
           score: SCORE.value,
         }),
       },
+      refreshInput(),
     );
   });
 })();
 
-const refreshLeaderboard = async () => {
-  const response = await fetch(
-    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/oHFx2AoOEAVDqu2U4dC1/scores',
-  );
-  const scoreText = await response.text();
-  const score = JSON.parse(scoreText);
-  score.result.forEach((player) => {
-    if (player.length === 0) {
-      leaderboard.style.border = 'none';
-    } else {
-      leaderboard.style.border = '2px solid rgb(36, 1, 1)';
-      leaderboard.innerHTML += `<li>
-      ${player.user}: ${player.score}</td>
-      </li>`;
-    }
-  });
-};
-
-REFRESH.adudEventListener('click', () => {
+REFRESH.addEventListener('click', () => {
   leaderboard.innerHTML = '';
   refreshLeaderboard();
 });
